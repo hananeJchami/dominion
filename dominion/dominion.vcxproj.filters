@@ -21,9 +21,21 @@
     <ClCompile Include="Carte.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Fonction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tresor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Carte.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Fonction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tresor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

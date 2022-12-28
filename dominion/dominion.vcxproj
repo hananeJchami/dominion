@@ -129,9 +129,13 @@
   <ItemGroup>
     <ClCompile Include="Carte.cpp" />
     <ClCompile Include="dominion.cpp" />
+    <ClCompile Include="Fonction.cpp" />
+    <ClCompile Include="Tresor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Carte.h" />
+    <ClInclude Include="Fonction.h" />
+    <ClInclude Include="Tresor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

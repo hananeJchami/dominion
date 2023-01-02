@@ -27,6 +27,30 @@
     <ClCompile Include="Tresor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Victoire.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Royaume.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Malediction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Action.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionAttaque.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionReaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Deck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Joueur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Carte.h">
@@ -36,6 +60,30 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Tresor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Victoire.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Royaume.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Malediction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Action.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionAttaque.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionReaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Deck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Joueur.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

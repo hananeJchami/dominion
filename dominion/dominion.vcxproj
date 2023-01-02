@@ -127,15 +127,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Action.cpp" />
+    <ClCompile Include="ActionAttaque.cpp" />
+    <ClCompile Include="ActionReaction.cpp" />
     <ClCompile Include="Carte.cpp" />
+    <ClCompile Include="Deck.cpp" />
     <ClCompile Include="dominion.cpp" />
     <ClCompile Include="Fonction.cpp" />
+    <ClCompile Include="Joueur.cpp" />
+    <ClCompile Include="Malediction.cpp" />
+    <ClCompile Include="Royaume.cpp" />
     <ClCompile Include="Tresor.cpp" />
+    <ClCompile Include="Victoire.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Action.h" />
+    <ClInclude Include="ActionAttaque.h" />
+    <ClInclude Include="ActionReaction.h" />
     <ClInclude Include="Carte.h" />
+    <ClInclude Include="Deck.h" />
     <ClInclude Include="Fonction.h" />
+    <ClInclude Include="Joueur.h" />
+    <ClInclude Include="Malediction.h" />
+    <ClInclude Include="Royaume.h" />
     <ClInclude Include="Tresor.h" />
+    <ClInclude Include="Victoire.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

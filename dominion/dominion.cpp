@@ -2,9 +2,31 @@
 //
 
 #include <iostream>
+#include "Deck.h"
+#include "Joueur.h"
+#include "Action.h"
 
 int main()
 {
+    Fonction* fonction1 = new Fonction(1,"cartes");
+    Fonction *fonctions[1] = { fonction1 };
+
+    Fonction* fonction2 = new Fonction(1, "cartes");
+
+    Action* carteAction1 = new Action(1, "Forgeron", 3, "Action", *fonctions);
+    Carte* carte2 = new Carte(2, "Marché", 5, "Tresor");
+    Carte* carte3 = new Carte(3, "Village", 2, "Victoire");
+    Action* carteAction2 = new Action(4, "bucheron", 1, "Action", *fonctions);
+    Carte* carte5 = new Carte(5, "shi", 2,"Victoire");
+    Carte cartes[5] = { *carteAction1,*carte2,*carte3, *carteAction2, *carte5 };
+
+    Deck* deck1 = new Deck(5, cartes);
+
+    Joueur* joueur1 = new Joueur(*deck1);
+    joueur1->diviserLesCartes();
+    joueur1->print();
+    joueur1->jouerTour();
+
     std::cout << "Hello World!\n";
 }
 

@@ -2,20 +2,17 @@
 #include <iostream>
 #include <cstdlib>
 
-Tresor::Tresor(int idd, std::string name, int cost, std::string aType, Fonction abilities[5], int value)
-	: Carte(idd, name, cost, aType) {
+
+//les cartes tresor n'ont aucune abilite et on met la valeur par defaut pour chaque type de carte:
+Tresor::Tresor(int idd, std::string name, int cost, std::string aType, std::vector<Fonction*> abilities, int value)
+	: Carte(idd, name, cost, aType, abilities,value) {
+	setIsAction(false);
+	setIsVictoireOrTresor(true);
 	aType = "Tresor";
-	if (name == "Cuivre") { value = 1; }
+	if (name == "Cuivre") { value = 1;  }
 	if (name == "Argent") { value = 2; }
 	if (name == "Or") { value = 3; }
 
 }
 
 Tresor::~Tresor() {}
-int Tresor::getValeur() { return valeur; }
-void Tresor::setValeur(int value) { valeur = value; }
-
-void Tresor::print() {
-	Carte::print();
-	std::cout << "Valeur : " << valeur;
-}

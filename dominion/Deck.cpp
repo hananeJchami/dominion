@@ -2,19 +2,48 @@
 #include <cstdlib>
 #include "Deck.h"
 
-Deck::Deck(int nbCards, Carte(&cards)[5])
-    : nbCartes(nbCards) {
+Deck::Deck(int nbCards, std::vector<Carte> cards)
+    : nbCartes(nbCards){
     for (int i = 0; i < nbCards; i++) {
-        cartes[i] = cards[i];
+        cartes.push_back(cards.at(i));
     }
 }
 
 Deck::~Deck() {}
 
 int Deck::getNbCartes() { return nbCartes; }
-Carte* Deck::getCartes() { return cartes; }
+std::vector<Carte> Deck::getCartes() { return cartes; }
 
-void Deck::setNbCartes(int nb) { nbCartes = nb; }
+std::vector<Carte> Deck::resize(int bound) { cartes.resize(bound); 
+return cartes;
+}
+
+int Deck::getNbDuMemeType() { return nbDuMemeType; }
+//std::vector<Carte> getPileTypes() { return pileTypes; }
+
+void Deck::setCartes(std::vector<Carte> cards) {
+    for (int i = 0; i < cards.size(); i++) {
+        cartes.push_back(cards.at(i));
+        nbCartes++;
+    }
+}
+
+
+void Deck::ajouterCarte(Carte carte) {
+    cartes.insert(cartes.end(), carte);
+    nbCartes++;
+}
+void Deck::supprimerCarte(Carte carte) {
+    auto it = std::find(cartes.begin(), cartes.end(), carte);
+    auto index = std::distance(cartes.begin(), it);
+
+    cartes.erase(cartes.begin() + index);
+    nbCartes--;
+    
+}
+void Deck::setNbCartes(int nb) {
+    nbCartes = nb; 
+}
 
 void Deck::shuffle(int nbCardsToShuffle) {
 
@@ -29,4 +58,12 @@ void Deck::shuffle(int nbCardsToShuffle) {
         std::swap(cartes[i], cartes[r]);
     }
 }
+void Deck::print() {
+    std::cout << " Deck\n";
+    for (int i = 0; i < nbCartes; i++) {
+        std::cout << this->getCartes().at(i);
+    }
+    std::cout << "\n";
+}
+
 

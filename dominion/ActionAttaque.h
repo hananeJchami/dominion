@@ -3,7 +3,7 @@
 class ActionAttaque : public Royaume
 {
 public:
-	ActionAttaque(int idd, std::string name, int cost, std::string aType, Fonction abilities[5]);
+	ActionAttaque(int idd, std::string name, int cost, std::string aType, std::vector<Fonction*> abilities, int value);
 	~ActionAttaque();
 };
 

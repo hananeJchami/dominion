@@ -2,17 +2,11 @@
 #include <iostream>
 #include <cstdlib>
 
-Victoire::Victoire(int idd, std::string name, int cost, std::string aType, Fonction abilities[5], int value)
-	: Carte(idd, name, cost, aType), valeur(value) {
+Victoire::Victoire(int idd, std::string name, int cost, std::string aType, std::vector<Fonction*> abilities, int value)
+	: Carte(idd, name, cost, aType, abilities, value) {
+	setIsAction(false);
+	setIsVictoireOrTresor(true);
 	aType = "Victoire";
 }
 
 Victoire::~Victoire() {}
-
-int Victoire::getValeur() { return valeur; }
-void Victoire::setValeur(int value) { valeur = value; }
-
-void Victoire::print() {
-	Carte::print();
-	std::cout << "Valeur : " << valeur;
-}
